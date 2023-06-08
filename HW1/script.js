@@ -48,6 +48,6 @@ console.log('Clean Earn 2nd:', earn2);
 // Advanced
 
 const fullInfo = `
-Min value: ${min}, Max value: ${max}, Sum: ${sum}, Sum of floor prices: ${sumTotal}, Sum rounded: ${sumRounded}, Is sum even? ${isSumEven}, Remainder: ${remainder}, Average value: ${avgValue}, Discount: ${Discount}, Total with discount: ${amount}
+Min value: ${min}, Max value: ${max}, Sum: ${sum}, Sum of floor prices: ${sumTotal}, Sum rounded: ${sumRounded}, Is sum even? ${isSumEven}, Remainder: ${remainder}, Average value: ${avgValue}, Discount: ${Discount}, Total with discount: ${amount}, Clean Earn: ${earn}, Clean Earn 2nd: ${earn2}
 `;
 console.log(fullInfo);
