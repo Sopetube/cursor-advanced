@@ -36,6 +36,15 @@ console.log('Discount: ', Discount);
 let amount = +(sum * (Discount / 100)).toFixed(2);
 console.log('Total with discount: ', amount);
 
+let price = + ( (sum / 100) * 10).toFixed(2);
+let cost = (sum / 2).toFixed(2)
+let earn = (cost - price);
+console.log('Clean Earn:', earn);
+
+let price2 = + ( (sum / 100) * 90).toFixed(2);
+let cost2 = (sum / 2).toFixed(2)
+let earn2 = +(cost2 - price2).toFixed(2);
+console.log('Clean Earn 2nd:', earn2);
 // Advanced
 
 const fullInfo = `
