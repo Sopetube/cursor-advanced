@@ -39,15 +39,6 @@ console.log('Total with discount: ', amount);
 // Advanced
 
 const fullInfo = `
-Min value: ${min}
-Max value: ${max}
-Sum: ${sum}
-Sum of floor prices: ${sumTotal}
-Sum rounded: ${sumRounded}
-Is sum even? ${isSumEven}
-Remainder: ${remainder}
-Average value: ${avgValue}
-Discount: ${Discount}
-Total with discount: ${amount}
+Min value: ${min}, Max value: ${max}, Sum: ${sum}, Sum of floor prices: ${sumTotal}, Sum rounded: ${sumRounded}, Is sum even? ${isSumEven}, Remainder: ${remainder}, Average value: ${avgValue}, Discount: ${Discount}, Total with discount: ${amount}
 `;
 console.log(fullInfo);
