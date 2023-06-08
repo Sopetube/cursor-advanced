@@ -31,7 +31,7 @@ console.log("Average value:", +avgValue);
 
 // HARD
 let Discount = +Math.ceil(Math.random() * 100).toFixed(2);
-console.log('Discount: ', Discount);
+console.log('Discount: ', Discount, '%');
 
 let amount = + (sum - ( (sum / 100) * Discount)).toFixed(2);
 console.log('Total with discount: ', amount);
