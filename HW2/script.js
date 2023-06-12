@@ -15,8 +15,8 @@ if (isNaN(n) || isNaN(m)) {
 } else {
     console.log(parseInt(n));
     console.log(parseInt(m));
-    const min = Math.min(n, m);
-    const max = Math.max(n, m);
+    const min = Math.min(n, m);//можливість юзати n>m, тобто якщо перше значення буде більшим
+    const max = Math.max(n, m);//можливість юзати n>m, тобто якщо перше значення буде більшим
 
     for (let i = min; i <= max; i++){
         if (skip) {
