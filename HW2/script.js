@@ -2,8 +2,11 @@ let n = 0;
 let m = 0;
 let sum = 0;
 
-n = parseInt(prompt('Number N'));
+n = parseInt(prompt('Number N= '));
+    document.writeln('From= ', n, ';')
+
 m = parseInt(prompt('Number M'));
+    document.writeln('To= ', m, '<br><\hr>');
 
 const skip = confirm('skip an odd?'); 
 
@@ -26,5 +29,5 @@ if (isNaN(n) || isNaN(m)) {
             sum += i;
         }
     }
-    console.log('sum: ', sum)
+    document.writeln('Sum: ', sum)
 }
