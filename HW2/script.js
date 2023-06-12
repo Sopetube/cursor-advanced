@@ -2,7 +2,7 @@ let n = 0;
 let m = 0;
 let sum = 0;
 
-n = parseInt(prompt('Number N= '));
+n = parseInt(prompt('Number N'));
     document.writeln('From= ', n, ';')
 
 m = parseInt(prompt('Number M'));
