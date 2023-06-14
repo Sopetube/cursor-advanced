@@ -1,33 +1,30 @@
 let n = 0;
-let m = 0;
-let sum = 0;
-
-n = parseInt(prompt('Number N'));
-    document.writeln('From= ', n, ';')
-
-m = parseInt(prompt('Number M'));
-    document.writeln('To= ', m, '<br><\hr>');
-
-const skip = confirm('skip an odd?'); 
-
-if (isNaN(n) || isNaN(m)) {
-    console.log('Please input a number.')
-} else {
-    console.log(parseInt(n));
-    console.log(parseInt(m));
-    const min = Math.min(n, m);//можливість юзати n>m, тобто якщо перше значення буде більшим
-    const max = Math.max(n, m);//можливість юзати n>m, тобто якщо перше значення буде більшим
-
-    for (let i = min; i <= max; i++){
-        if (skip) {
-            if (i % 2 === 0){
-                sum += 0
-            } else {
-                sum += i
-            }
-        } else {
-            sum += i;
-        }
-    }
-    document.writeln('Sum: ', sum)
+	m = 0;
+	sum = 0;
+	
+n = +prompt('Введіть перше ціле число більше за 0:', '');
+while ((n !== Math.round(n)) || (isNaN(n))) {
+	n = +prompt('От халепа🥲\nВведіть ще раз перше ціле число більше за 0', '');
 }
+
+m = +prompt('Введіть друге ціле число більше за 0:', '');
+while ((m !== Math.round(m)) || (isNaN(m))) {
+	m = +prompt('От халепа🥲\nВведіть ще раз друге ціле число більше за 0', '')
+}
+
+const skip = confirm('Пропускаємо парні числа?'); 
+
+for (let i = n; i <= m; i++){
+	if (skip) {
+		if (i % 2 === 0){
+			sum += 0;
+		} else {
+			sum += i;
+		}
+	} else {
+		sum += i;
+	}
+}
+document.writeln('Від: ', n);
+document.writeln('До: ', m);
+document.writeln('Сума: ', sum);
