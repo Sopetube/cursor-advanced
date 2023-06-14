@@ -26,5 +26,5 @@ for (let i = n; i <= m; i++){
 	}
 }
 document.writeln('Від: ', n);
-document.writeln('До: ', m);
+document.writeln('До: ', m, '<hr>');
 document.writeln('Сума: ', sum);
