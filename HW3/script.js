@@ -1,3 +1,4 @@
+// 1st (#1 from exercises)
 // let number = +prompt('input', "");
 // function getMaxDigit(number) {
 //     const arr = number.toString().split('');
@@ -6,7 +7,7 @@
 // // const maxNumber = getMaxDigit(number);
 // // console.log(maxNumber);
 
-// // 2nd
+// // 2nd (#3 from exercises)
 
 // let yourName = prompt('Input your name', '')
 
@@ -17,7 +18,7 @@
 // }
 // console.log(toUppercase(yourName))
 
-// // 3rd
+// // 3rd (#4 from exercises)
 
 // let salary = +prompt('Input a salary','');
 
@@ -29,7 +30,7 @@
 // }
 // console.log(totalProfit(salary))
 
-// 4
+// 4 (#5 from exercises)
 
 // let start = +prompt('З якого числа','');
 // let end = +prompt('По яке число','');
@@ -40,33 +41,21 @@
 
 // console.log(randomNum(start,end))
 
-// 5
+// 5+6 (#7+#8 from exercises)
 
-function currencyConvertor(amount, currency){
+const answer = prompt('ddfdfdf', '');
+
+function currencyConvertor(response){
     let rate = 37;
-    if (currency.includes('$')){
-            const toUah =  amount * rate;
-            return currencyConvertor + (amount + ' USD🇺🇸 to UAH🇺🇦 ' + '= ' + toUah);
-        } else {
-            const toUsd = amount / rate;
-            return currencyConvertor + (amount + ' UAH🇺🇦 to USD🇺🇸 ' + '= ' + toUsd);
+    if (response.includes('$')){
+        const toUah =  parseInt(response) * rate;
+        return (parseInt(response) + ' USD🇺🇸 to UAH🇺🇦 ' + '= ' + toUah.toFixed(2));
+    } if (response.toLowerCase().includes('uah')){
+        const toUsd = parseInt(response) / rate;
+        return (parseInt(response) + ' UAH🇺🇦 to USD🇺🇸 ' + '= ' + toUsd.toFixed(2));
+    } else {
+        return 'Невідома валюта'
     }
 }
-console.log(currencyConvertor(100, '$'))
 
-
-
-
-
-// function currencyConvertor(amount, currency){
-//     let rate = 37.5;
-//     if (currency.includes('$')){
-//             const toUah =  amount * rate;
-//             console.log(amount + ' USD🇺🇸 to UAH🇺🇦 ' + '= ' + toUah);
-//         } else {
-//             const toUsd = amount / rate;
-//             console.log(amount + ' UAH🇺🇦 to USD🇺🇸 ' + '= ' + toUsd);
-//     }
-//     return currencyConvertor
-// }
-// console.log(currencyConvertor(100, '$'))
+console.log(currencyConvertor(answer))
