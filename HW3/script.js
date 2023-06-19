@@ -1,5 +1,6 @@
 // 1st (#1 from exercises)
 let num = +prompt('Введіть значення в якому потрібно знайти найбільше число:', '');
+
 function getMaxDigit(number) {
     const arr = number.toString().split('');
     return Math.max(...arr)
