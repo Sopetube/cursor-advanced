@@ -1,5 +1,5 @@
 // 1st (#1 from exercises)
-let num = +prompt('Введіть значення в якому потрібно знайти найбільше число:', '');
+// let num = +prompt('Введіть значення в якому потрібно знайти найбільше число:', '');
 
 function getMaxDigit(number) {
     const arr = number.toString().split('');
@@ -9,7 +9,7 @@ function getMaxDigit(number) {
 
 // ======================================================
 // 2nd (#3 from exercises)
-let yourName = prompt('Введіть ім\'я для форматування:', '')
+// let yourName = prompt('Введіть ім\'я для форматування:', '')
 
 function toUppercase(param){
     let name = param.toLowerCase();
@@ -21,7 +21,7 @@ function toUppercase(param){
 // ======================================================
 // // 3rd (#4 from exercises)
 
-let salary = +prompt('Впишіть значення заробітньої плати:','');
+// let salary = +prompt('Впишіть значення заробітньої плати:','');
 
 function totalProfit(sum){
     const tax1 = sum / 100 * 18;
@@ -33,8 +33,8 @@ function totalProfit(sum){
 
 // ======================================================
 // 4 (#5 from exercises)
-let start = +prompt('З якого числа генеруємо число:','');
-let end = +prompt('По яке число генеруємо','');
+// let start = +prompt('З якого числа генеруємо число:','');
+// let end = +prompt('По яке число генеруємо','');
 
 function randomNum(start,end){
     return Math.round(Math.random() * (end - start + 1) + start);
@@ -44,7 +44,7 @@ function randomNum(start,end){
 
 // ======================================================
 // 5+6 (#7+#8 from exercises)
-const answer = prompt('Введіть суму та валюту ("напр. 100$")', '');
+// const answer = prompt('Введіть суму та валюту ("напр. 100$")', '');
 
 function currencyConvertor(response){
     let rate = 37;
@@ -63,8 +63,8 @@ function currencyConvertor(response){
 
 // ======================================================
 // 7 (#6 from exercises)
-const wrd = prompt('Введіть слово або речення в якому будемо рахувати кількість вживання літери:', '');
-const ltr = prompt('Введіть літеру для обрахунку кількості:', '');
+// const wrd = prompt('Введіть слово або речення в якому будемо рахувати кількість вживання літери:', '');
+// const ltr = prompt('Введіть літеру для обрахунку кількості:', '');
 
 function letterCounter(word, letter){
     let counter = 0;
@@ -79,8 +79,8 @@ function letterCounter(word, letter){
 
 // ======================================================
 // 8 (#10 from exercises)
-const text = prompt('Текст в якому будемо видаляти букви:', '');
-const letterWantToRemove = prompt('Літери які будемо видаляти:', '')
+// const text = prompt('Текст в якому будемо видаляти букви:', '');
+// const letterWantToRemove = prompt('Літери які будемо видаляти:', '')
 
 function toRemove(sentence, letterToRemove){
     sentence = sentence.toLowerCase().replaceAll(letterToRemove.toLowerCase(), '');
@@ -89,10 +89,10 @@ function toRemove(sentence, letterToRemove){
 // console.log(toRemove(text, letterWantToRemove))
 
 console.log(`
-Функція №1: ${getMaxDigit(num)}\n
-Функція №2: ${toUppercase(yourName)}\n
-Функція №3: ${totalProfit(salary)}\n
-Функція №4: ${randomNum(start,end)}\n
-Функція №5+6: ${currencyConvertor(answer)}\n
-Функція №7: ${letterCounter(wrd, ltr)}\n
-Функція №8: ${toRemove(text, letterWantToRemove)}`)
+Функція №1: ${getMaxDigit(123456789)}\n
+Функція №2: ${toUppercase('вЛастиСлав')}\n
+Функція №3: ${totalProfit(1250)}\n
+Функція №4: ${randomNum(10, 15)}\n
+Функція №5+6: ${currencyConvertor('1250$')}\n
+Функція №7: ${letterCounter('слово', 'о')}\n
+Функція №8: ${toRemove('Введіть слово або речення', 'о')}`) 
