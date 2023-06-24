@@ -1,7 +1,8 @@
-node_modules
-HW1
-HW2
-HW3
+node_modules/
+HW1/
+HW2/
+HW3/
+HW5/
 .eslintrc.js
 package-lock.json
 package.json
