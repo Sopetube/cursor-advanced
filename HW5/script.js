@@ -54,7 +54,7 @@ console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 // чисел більших
 // Приклад: countPositiveNumbers(1, -2, 3, -4, -5, 6) -> 3
 
-function countPositiveNumbers(numbers){
+function countPositiveNumbers(...numbers){
     let counter = numbers.filter(num => num > 0)
         return counter.length
 };
