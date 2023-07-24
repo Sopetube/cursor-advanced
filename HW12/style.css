@@ -1,0 +1,161 @@
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+  *{
+    box-sizing: border-box;
+}
+body{
+    background: url(./images/bkg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.logo{
+    width: 20%;
+    margin: 0 40%;
+}
+.main{
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 300px;
+    width: 300px; 
+    border-radius: 50px;
+}
+.main p{
+    width: 80%;
+    color: #000000;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+.main p span{
+    color: yellow;
+}
+.buttons_wrap{
+    display: flex;
+    gap: 1px;
+}
+.buttons_wrap button:first-child, button:last-child{
+    width: 50%;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+}
+.buttons_wrap > button:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+.buttons_wrap  > button:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px white !important;
+}
+.buttons_wrap > button:first-child:hover, .buttons_wrap > button:last-child:hover{
+    background-color: rgb(57, 56, 57);
+    transition: 0.5s;
+    font-size: 14px;
+
+}
+.input{
+    width: 80%;
+    height: 30px;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.buttons_wrap{
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+#card_box{
+    font-family: 'Geostar Fill', cursive;
+    margin: 70px auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+#char_card{
+    background-image: url(./images/cardsBckgr.jpeg);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 500px;
+    text-shadow: #FC0 1px 0 10px;
+    overflow: hidden;
+    box-shadow: 1px 20px 76px 5px rgba(255,234,0,0.59);
+}
+#char_card h2{
+    margin-left: 16px;
+}
+#char_card div{
+    margin-left: 16px;
+}
+
+#char_card > img{
+    height: 60%;
+    object-fit: contain;
+    
+}
+.planets_names{
+    background-color: #fff;
+    color: black;
+
+}
+.planet_tab{
+    margin: 0 auto;
+    width: 200px;
+}
+.planet_tab_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#next_btn, #prev{
+    display: none;
+    width: 90px;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(52, 51, 51);
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+
+}
+#next_btn:hover, #prev:hover{
+    background-color: rgb(45, 45, 45);
+}
+.root{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 200px;
+    color: #ffffff;
+    border-radius: 20px;    
+    font-family: 'Geostar Fill', cursive;
+
+}
+.root li{
+    padding: 10px;
+}
+#prev{
+    display: none;
+}

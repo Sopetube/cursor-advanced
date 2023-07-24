@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW#12 Vlastyslav | 'Робота з сервером'</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <section class="hero">
+        <img src="./images/Star-Wars-Logo.png" alt="StarWars logo" class="logo">
+    </section>
+    <div class="main">
+        <input type="text" class="input" placeholder="Episode">
+        <div class="buttons_wrap">
+            <button onclick="getFilmsInfo()" id="get_info">Get info!</button>
+            <button onclick="getPlanets()" id="get_planet">Get Planet!</button>
+        </div>
+        <p><span>Tip: </span>Please choose the episode or just click on Get Info button to see EP II characters.</p>
+    </div>
+    <div class="planet_tab">
+        <ul class="root"></ul>
+        <div class="planet_tab_btns">
+            <button id="next_btn">Next</button>
+            <button id="prev">Previous</button>
+        </div>
+    </div>
+    <div id="card_box">        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
