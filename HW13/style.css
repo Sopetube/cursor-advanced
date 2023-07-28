@@ -1,0 +1,17 @@
+button{
+    display: block;
+    border: 1px solid #969696;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: aquamarine;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 5px;
+}
+p{
+    font-family: sans-serif;
+}
